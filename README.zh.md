@@ -1,6 +1,6 @@
 <p align="right"><a href="README.md">English</a> · <b>简体中文</b></p>
 
-# 🎬 Vox Director(拼贴动效导演）
+# 🎬 Vox Director(拼贴动效导演)
 
 **一个选题进,一条成片出——脚本、拼贴关键帧、动效、旁白、配乐、字幕,全流程自动化的 Vox 风格拼贴讲解/广告视频。**
 
@@ -53,6 +53,11 @@ https://github.com/user-attachments/assets/ed08d230-7bcb-4b48-a17d-23c079208f9f
   └─ final.mp4
 ```
 
+上面这条是 **B-roll**——一个选题进去,画面全靠生成。另外两种输入形态复用同一套引擎:
+
+- **A-roll——你已经有一段口播视频。** 它会被 ASR 自动切成段,再整段套上拼贴风格,真人的脸、口型、手势逐帧保留(`gemini-omni-flash/video-edit`,失败自动重试 `seedance-2.0/reference-to-video`)。
+- **C-roll——你只有一张静态照片**(自拍、产品图)。主体被抠成摄影质感的贴纸——绝不重绘——每一段的海报围着它生成(`nano-banana-2/edit`)。旁白还能克隆成主体本人的声音。
+
 两个关键理念决定成败,技能就是围绕它们搭的:
 
 1. **风格诞生在生图这一步。** 每一拍是一张成品拼贴*海报*,所有拼贴基因(撕纸、剪纸、网点、标题文字)都长在这张图里——图不够拼贴,后面再怎么救也救不回来。
@@ -67,7 +72,10 @@ https://github.com/user-attachments/assets/ed08d230-7bcb-4b48-a17d-23c079208f9f
 | 关键帧 / 拼贴海报 | `google/nano-banana-2/text-to-image` |
 | 动效(非真人内容) | `google/gemini-omni-flash/image-to-video` |
 | 动效(**真人 / 品牌**) | `kwaivgi/kling-video-o3-pro/image-to-video` |
+| 口播视频转拼贴(A-roll) | `google/gemini-omni-flash/video-edit` |
+| 照片锚进拼贴(C-roll) | `google/nano-banana-2/edit` |
 | 旁白 | `xai/tts-v1` |
+| 用真人本人的声音念旁白 | `bytedance/seed-audio-1.0`(声音克隆) |
 | 配乐 | `minimax/music-2.6` |
 | 抠素材(高级路径) | `youchuan/v8.1/remove-background` |
 

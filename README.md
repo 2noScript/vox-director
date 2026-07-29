@@ -53,6 +53,11 @@ topic
   └─ final.mp4
 ```
 
+That flow is **B-roll** — a topic in, everything generated. Two more input modalities reuse the same engine:
+
+- **A-roll — you already have a talking-head video.** It is ASR-segmented into beats and re-styled into the collage look, keeping the real face, lip-sync and gestures frame-for-frame (`gemini-omni-flash/video-edit`, auto-retrying on `seedance-2.0/reference-to-video`).
+- **C-roll — you have one still photo** (a selfie, a product shot). The subject is cut out as a photographic sticker — never redrawn — and each beat's poster is generated around it (`nano-banana-2/edit`). The narration can be cloned into the subject's own voice.
+
 Two ideas make or break the result, and the skill is built around both:
 
 1. **The look is born in the image step.** Each beat is a finished collage *poster*. All the collage DNA (torn paper, cut-outs, halftone, headline text) lives in that image — if the poster isn't a rich collage, nothing downstream saves it.
@@ -67,7 +72,10 @@ Two human decision gates keep you in control (approve the beat map; pick the sty
 | Keyframe / collage poster | `google/nano-banana-2/text-to-image` |
 | Animate (non-real content) | `google/gemini-omni-flash/image-to-video` |
 | Animate (**real people / brands**) | `kwaivgi/kling-video-o3-pro/image-to-video` |
+| Re-style a talking-head (A-roll) | `google/gemini-omni-flash/video-edit` |
+| Anchor a photo in the collage (C-roll) | `google/nano-banana-2/edit` |
 | Narration | `xai/tts-v1` |
+| Narration in a real person's voice | `bytedance/seed-audio-1.0` (voice cloning) |
 | Music | `minimax/music-2.6` |
 | Cut out an element (advanced path) | `youchuan/v8.1/remove-background` |
 
