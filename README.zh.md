@@ -131,10 +131,6 @@ examples/             可直接跑的 beats.json 示例
 assets/               样片
 ```
 
-## Star History
-
-<a href="https://star-history.com/#Alisa0808/vox-director&Date"><img src="https://api.star-history.com/svg?repos=Alisa0808/vox-director&type=Date" width="560" alt="Star History Chart"></a>
-
 ## 致谢
 
 作者 **[@alisaqqt](https://x.com/alisaqqt)** —— 关注我看更多 agent skill 实验。

@@ -131,10 +131,6 @@ examples/             ready-to-run beats.json examples
 assets/               the showcase film
 ```
 
-## Star History
-
-<a href="https://star-history.com/#Alisa0808/vox-director&Date"><img src="https://api.star-history.com/svg?repos=Alisa0808/vox-director&type=Date" width="560" alt="Star History Chart"></a>
-
 ## Credits
 
 Built by **[@alisaqqt](https://x.com/alisaqqt)** — follow for more agent-skill experiments.
