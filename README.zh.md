@@ -18,14 +18,16 @@ https://github.com/user-attachments/assets/ed08d230-7bcb-4b48-a17d-23c079208f9f
 
 <table>
   <tr>
-    <td width="33%"><a href="https://github.com/user-attachments/assets/216cd62f-6314-456c-94cf-1090b8559a22"><img src="assets/thumbs/football.jpg" width="100%" alt="足球如何征服世界"></a></td>
-    <td width="33%"><a href="https://github.com/user-attachments/assets/561788b1-5615-4828-b3f8-b24ae5ad7bcd"><img src="assets/thumbs/mexican.jpg" width="100%" alt="墨西哥街头美食"></a></td>
-    <td width="33%"><a href="https://github.com/user-attachments/assets/f69f072f-f50a-41ba-9e66-7ed0aae4ddc0"><img src="assets/thumbs/money.jpg" width="100%" alt="货币简史"></a></td>
+    <td width="25%"><a href="https://github.com/user-attachments/assets/216cd62f-6314-456c-94cf-1090b8559a22"><img src="assets/thumbs/football.jpg" width="100%" alt="足球如何征服世界"></a></td>
+    <td width="25%"><a href="https://github.com/user-attachments/assets/561788b1-5615-4828-b3f8-b24ae5ad7bcd"><img src="assets/thumbs/mexican.jpg" width="100%" alt="墨西哥街头美食"></a></td>
+    <td width="25%"><a href="https://github.com/user-attachments/assets/f69f072f-f50a-41ba-9e66-7ed0aae4ddc0"><img src="assets/thumbs/money.jpg" width="100%" alt="货币简史"></a></td>
+    <td width="25%"><a href="https://github.com/user-attachments/assets/b9ff526f-577f-4acb-aafe-a2519a9b7c1c"><img src="assets/thumbs/silicon-valley.jpg" width="100%" alt="硅谷简史"></a></td>
   </tr>
   <tr>
     <td align="center"><sub>足球如何征服世界 · 60 秒</sub></td>
     <td align="center"><sub>墨西哥街头美食 · 60 秒</sub></td>
     <td align="center"><sub>货币简史 · 60 秒</sub></td>
+    <td align="center"><sub>硅谷简史 · 60 秒</sub></td>
   </tr>
 </table>
 
@@ -129,7 +131,13 @@ examples/             可直接跑的 beats.json 示例
 assets/               样片
 ```
 
+## Star History
+
+<a href="https://star-history.com/#Alisa0808/vox-director&Date"><img src="https://api.star-history.com/svg?repos=Alisa0808/vox-director&type=Date" width="560" alt="Star History Chart"></a>
+
 ## 致谢
+
+作者 **[@alisaqqt](https://x.com/alisaqqt)** —— 关注我看更多 agent skill 实验。
 
 灵感来自 **[Stav Zilber](https://x.com/StavZilber)**、**[rom1trs](https://x.com/rom1trs)**、**[Higgsfield](https://x.com/higgsfield_ai)** 的拼贴广告工作流,以及 **[Vox](https://www.vox.com)** 的讲解片视觉语言。
 
